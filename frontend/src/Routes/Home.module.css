@@ -1,0 +1,22 @@
+.home{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 0;
+}
+
+
+.home>div{
+    border: 1px solid white;
+}
+
+.home>div:first-child{
+    width: 15%;
+    text-align: left;
+    padding: 10px;
+}
+.home>div:nth-child(2){
+    width: 65%;
+}
+.home>div:last-child{
+    width: 15%;
+}

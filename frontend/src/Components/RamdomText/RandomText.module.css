@@ -1,0 +1,12 @@
+
+
+.textBox>div{
+    border: 3px solid rgb(255, 2, 2);
+    border-radius: 10px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 10px;
+}
