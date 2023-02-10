@@ -9,4 +9,5 @@
 .navbar>div:first-child{
     font-size: 25px;
     font-weight: bold;
+    color: turquoise;
 }

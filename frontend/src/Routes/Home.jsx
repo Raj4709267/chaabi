@@ -1,15 +1,17 @@
-import React from 'react'
-import Name from '../Components/Name/Name'
-import Summery from '../Components/Summery/Summery'
+import React, { useState } from 'react'
+import Result from '../Components/Result/Result'
+import Timer from '../Components/Timer/Timer'
 import TypingBox from '../Components/TypingBox/TypingBox'
 import style from "./Home.module.css"
 
 function Home() {
+
+
   return (
     <div className={style.home}>
-        <Name/>
+        {/* <Timer/> */}
         <TypingBox/>
-        <Summery/>
+        <Result/>
     </div>
   )
 }
