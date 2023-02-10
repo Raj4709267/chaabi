@@ -6,13 +6,7 @@ import Home from './Routes/Home';
 
 function App() {
 
-  // const store=useSelector(store=>store.AppReducer)
-  // console.log(store)
-  // const dispatch=useDispatch();
-  // if(store.count==0){
-
-  //   dispatch({type:"ADD"})
-  // }
+ 
 
 
   return (

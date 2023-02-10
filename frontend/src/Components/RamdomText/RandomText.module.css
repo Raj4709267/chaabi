@@ -2,7 +2,7 @@
 
 .textBox>div{
     border: 5px solid turquoise;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     min-height: 80px;
     display: flex;
     justify-content: center;

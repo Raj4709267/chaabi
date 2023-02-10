@@ -84,6 +84,16 @@ const TextCompare = () => {
     
   }
 
+  function startTimer(){
+    setTotalCharacterTyped(0)
+    setWrongCharacterTyped(0)
+    let id = setInterval(() => {
+      setSeconds((seconds) => seconds + 1);
+    }, 1000);
+    setTimerId(id);
+   
+  }
+
   const handleTextChange = () => {
     if (level == "easy") {
       const randomIndex = Math.floor(Math.random() * easy.length);
@@ -220,7 +230,20 @@ const TextCompare = () => {
         </Box>
         <Box>
           Minutes: {minutes} Seconds: {formattedSeconds}
-          
+         {
+          seconds==0 &&
+          <Button
+            color={"black"}
+            fontSize="20px"
+            fontWeight={"bold"}
+            borderRadius="0"
+            bg={"turquoise"}
+            padding="0 30px 0 30px"
+            margin={"20px"}
+            onClick={startTimer}
+          >
+            Start
+          </Button>}
         </Box>
       </Box>
       <Textarea
@@ -238,6 +261,7 @@ const TextCompare = () => {
         _placeholder={{ fontSize: "20px", color: "#b7c7d0" }}
         border="10px solid turquoise"
         _hover={{ border: "10px solid turquoise" }}
+        borderRadius="0"
       />
     </div>
   );
